@@ -1,0 +1,251 @@
+*{
+	margin: 0;
+	padding:0;
+}
+html{
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style: none;
+}
+body{
+	background-color: #ff9162b3;
+}
+/*---------showcase-----------*/
+.showcase{
+	position: absolute;
+	height: 85vh;
+	width: 1200px;
+	background: #ffe6e6;
+	border-radius: 30px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*---------navigation-------------*/
+nav{
+	line-height: 30px;
+	margin: 20px 50px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+.navigation ul li{
+	display: inline;
+	margin-right: 20px;
+}
+.navigation a{
+	color: black;
+}
+.navigation li a{
+	width: 100px;
+}
+.navigation ul li a.active{
+	color: darkgoldenrod;
+}
+.pointer{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: darkgoldenrod;
+	transform: translateX(17px);
+	transition: transform 0.3s ease-in-out;
+}
+.navigation ul li a:hover{
+	color: darkgoldenrod;
+	transition: color 0.3s ease-in-out;
+}
+.navigation ul li a:nth-child(2):hover - .pointer{
+	transform: translateX(30px);
+}
+.navigation ul li a:nth-child(3):hover - .pointer{
+	transform: translateX(50px);
+}
+.navigation ul li a:nth-child(4):hover - .pointer{
+	transform: translateX(80px);
+}
+.search{
+	position: relative;
+	margin-left: 80px;
+	width: 60%;
+	height: 35px;
+	background: #fff;
+	border-radius: 8px;
+}
+.search input{
+	padding-left: 8px;
+	outline: none;
+	border: none;
+	background: transparent;
+	line-height: 2.5;
+}
+/*----------content display------*/
+.content{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 20px;
+}
+/*----------first icon------------*/
+.first_icon{
+	margin-top: 20px;
+	margin-left: 100px;
+	position: absolute;
+	width: 15%;
+	height: 35px;
+	background: #ff760069;
+	border-radius: 5px;
+}
+.first_icon p{
+	line-height: 2;
+	padding-left: 20px;
+}
+/*-------description-------*/
+.description{
+	margin-top: 78px;
+	margin-left: 100px;
+}
+.description h2{
+	letter-spacing: 3px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 40px;
+}
+.description h2 span{
+	color: darkgoldenrod;
+}
+.description_tag{
+	width: 70%;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+/*--------------buttons-----------*/
+.buttons{
+	margin-left: 100px;
+	margin-top: 34px;
+	display: inline-block;
+	padding: 10px 0;
+	text-decoration: none;
+}
+.btn1{
+	padding: 6px 15px;
+	border-radius: 4px;
+	background-color: darkgoldenrod;
+	color: #fff;
+	margin-right: 30px;
+}
+.btn2{
+	color: #000;
+}
+/*-------------right content-----------*/
+.img img{
+	margin-left: 150px;
+	margin-top: 10px;
+	position: relative;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	text-align: right;
+}
+.img img:hover{
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+/*-------------ads-----------------*/
+	/*------first add------*/
+.ads_one{
+	border-radius: 8px;
+	bottom: 50px;
+	right: 370px;
+	position: absolute;
+	padding: 40px 10px 10px;
+	background-color: #efefef;
+}
+.user{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.ads_one img{
+	top: -35px;
+	position: absolute;
+	left: calc(50% - 35px);
+	border: 2px solid #fff;
+}
+.foodname{
+	font-size: 12px;
+	font-weight: bold;
+}
+.ingradients{
+	font-size: 10px;
+}
+.price{
+	font-weight: bold;
+	color: darkgoldenrod;
+}
+.ads_one:hover{
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: .5s;
+}
+	/*------second add------*/
+.ads_two{
+	border-radius: 8px;
+	bottom: 18px;
+	right: 200px;
+	position: absolute;
+	padding: 40px 10px 10px;
+	background-color: #efefef;
+}
+.user{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.ads_two img{
+	top: -35px;
+	position: absolute;
+	left: calc(50% - 35px);
+	border: 2px solid #fff;
+}
+.ads_two:hover{
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: .5s;
+}
+	/*------third add------*/
+.ads_three{
+	border-radius: 8px;
+	bottom: 50px;
+	right: 25px;
+	position: absolute;
+	padding: 40px 10px 10px;
+	background-color: #efefef;
+}
+.user{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.ads_three img{
+	top: -35px;
+	position: absolute;
+	left: calc(50% - 35px);
+	border: 2px solid #fff;
+}
+.ads_three:hover{
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: .5s;
+}
+
+
+
+
+
